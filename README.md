@@ -1,8 +1,21 @@
-# Clone this repository
-git clone https://github.com/manjunathgurupadappa-cloud/Data-analytics.git
+# Data Analytics & Web Scraping
 
-# Navigate into the project folder
-cd Data-analytics
+Welcome to the **Data Analytics** repository! This repository contains Python scripts for web scraping and data processing.
 
-# Run a specific script (e.g., IMDb Scraper)
-python imdb_movies.py# Data-analytics
+## 📁 Repository Contents
+
+* `books.py` - Scrapes book details and prices.
+* `countries_population.csv` - Dataset containing population figures.
+* `crypto_scraper.py` - Scrapes live/historical cryptocurrency data.
+* `imdb_movies.py` - Scrapes movie details and ratings from IMDb.
+* `news_scraper.py` - Collects top news headlines.
+* `scrape.py` - General-purpose scraping scripts.
+* `wikipedia_table.py` - Scrapes and parses Wikipedia tables.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone this repository
+```bash
+git clone [https://github.com/manjunathgurupadappa-cloud/Data-analytics.git](https://github.com/manjunathgurupadappa-cloud/Data-analytics.git)
