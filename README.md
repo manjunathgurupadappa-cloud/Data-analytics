@@ -1,21 +1,44 @@
-# Data Analytics & Web Scraping
+## Objective
 
-Welcome to the **Data Analytics** repository! This repository contains Python scripts for web scraping and data processing.
+The objective of this project is to collect and extract useful
+data from different websites using Python web scraping techniques.
 
-## 📁 Repository Contents
+## Technologies Used
 
-* `books.py` - Scrapes book details and prices.
-* `countries_population.csv` - Dataset containing population figures.
-* `crypto_scraper.py` - Scrapes live/historical cryptocurrency data.
-* `imdb_movies.py` - Scrapes movie details and ratings from IMDb.
-* `news_scraper.py` - Collects top news headlines.
-* `scrape.py` - General-purpose scraping scripts.
-* `wikipedia_table.py` - Scrapes and parses Wikipedia tables.
+- Python
+- Requests
+- BeautifulSoup
+- Pandas
+- CSV
+- Web Scraping
 
----
+## Projects
 
-## 🚀 Getting Started
+### 1. Books Scraper
+Extracts book names, prices and availability from the website.
 
-### 1. Clone this repository
-```bash
-git clone [https://github.com/manjunathgurupadappa-cloud/Data-analytics.git](https://github.com/manjunathgurupadappa-cloud/Data-analytics.git)
+### 2. Cryptocurrency Scraper
+Collects cryptocurrency-related data.
+
+### 3. IMDb Movies Scraper
+Extracts movie information and ratings.
+
+### 4. News Scraper
+Collects news headlines.
+
+### 5. Wikipedia Table Scraper
+Extracts structured data from Wikipedia tables.
+
+## Skills Demonstrated
+
+- Web scraping
+- HTML parsing
+- Data extraction
+- Data cleaning
+- CSV data handling
+- Python programming
+
+## Conclusion
+
+This project demonstrates the use of Python and web scraping
+techniques to collect and process real-world data from websites.
