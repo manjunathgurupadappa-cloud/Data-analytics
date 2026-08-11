@@ -3,7 +3,13 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 url = "https://books.toscrape.com/"
-response = requests.get(url)
+
+headers = {
+    "User-Agent": "Mozilla/5.0"
+}
+
+response = requests.get(url, headers=headers, timeout=10)
+response.raise_for_status()
 
 soup = BeautifulSoup(response.text, "html.parser")
 
@@ -13,16 +19,24 @@ data = []
 
 for book in books:
     name = book.h3.a["title"]
-    price = book.find("p", class_="price_color").text
-    availability = book.find("p", class_="instock availability").text.strip()
+    price = book.find("p", class_="price_color").text.strip()
+    availability = book.find(
+        "p", class_="instock availability"
+    ).text.strip()
+
+    rating = book.find("p", class_="star-rating")["class"][1]
 
     data.append({
         "Book Name": name,
         "Price": price,
-        "Availability": availability
+        "Availability": availability,
+        "Rating": rating
     })
 
 df = pd.DataFrame(data)
+
 df.to_csv("books.csv", index=False)
 
-print("Books saved successfully!")
+print("Books scraped successfully!")
+print(f"Total books scraped: {len(df)}")
+print("Data saved to books.csv")
